@@ -1,0 +1,44 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="120" x2="904" y2="904" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0EA5FF"/>
+      <stop offset="0.52" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="300" y1="250" x2="760" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0EA5FF"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#1E3A8A" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <!-- App rounded square -->
+  <rect x="80" y="80" width="864" height="864" rx="190" fill="url(#bg)"/>
+
+  <!-- Resume document -->
+  <g filter="url(#softShadow)">
+    <path d="M296 228H642L770 356V742C770 774.585 743.585 801 711 801H296C263.415 801 237 774.585 237 742V287C237 254.415 263.415 228 296 228Z" fill="white"/>
+    <path d="M642 228V323C642 341.225 656.775 356 675 356H770L642 228Z" fill="#EAF2FF"/>
+  </g>
+
+  <!-- Avatar -->
+  <circle cx="460" cy="358" r="64" fill="url(#accent)"/>
+  <path d="M341 521C352 453 398 422 460 422C522 422 568 453 579 521C583 544 564 564 541 564H379C356 564 337 544 341 521Z" fill="url(#accent)"/>
+
+  <!-- Resume lines -->
+  <rect x="340" y="624" width="355" height="34" rx="17" fill="url(#accent)" opacity="0.88"/>
+  <rect x="340" y="704" width="310" height="34" rx="17" fill="url(#accent)" opacity="0.82"/>
+  <rect x="340" y="784" width="210" height="34" rx="17" fill="url(#accent)" opacity="0.76"/>
+
+  <!-- Check badge -->
+  <circle cx="700" cy="714" r="116" fill="url(#accent)" stroke="white" stroke-width="28"/>
+  <path d="M646 710L684 748L759 662" stroke="white" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Sparkles -->
+  <path d="M796 209C806 257 829 280 877 290C829 300 806 323 796 371C786 323 763 300 715 290C763 280 786 257 796 209Z" fill="white"/>
+  <path d="M860 360C867 390 881 404 911 411C881 418 867 432 860 462C853 432 839 418 809 411C839 404 853 390 860 360Z" fill="white" opacity="0.94"/>
+</svg>
